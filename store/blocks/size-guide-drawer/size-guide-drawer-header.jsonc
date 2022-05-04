@@ -1,0 +1,22 @@
+{
+    "drawer-header#size-guide": {
+        "children": [
+            "drawer-close-button",
+            "flex-layout.row#size-guide-drawer-content"
+        ]
+    },
+    "flex-layout.row#size-guide-drawer-content": {
+        "props": {
+            "fullWidth": true,
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "rich-text#drawer-content"
+        ]
+    },
+    "rich-text#drawer-content": {
+        "props": {
+            "text": "GUÍA DE TALLAS"
+        }
+    }
+}

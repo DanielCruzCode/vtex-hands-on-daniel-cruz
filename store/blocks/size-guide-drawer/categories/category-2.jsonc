@@ -1,0 +1,27 @@
+{
+    "drawer#size-guide-category-2": {
+        "blocks": [
+            "drawer-header#size-guide",
+            "drawer-trigger#size-guide-category-2"
+        ],
+        "children": [
+            "image#size-guide-category-2"
+        ]
+    },
+    "drawer-trigger#size-guide-category-2": {
+        "children": [
+            "rich-text#size-guide-category-2-drawer-trigger"
+        ]
+    },
+
+    "rich-text#size-guide-category-2-drawer-trigger": {
+        "props": {
+            "text": "Hombre"
+        }
+    },
+    "image#size-guide-category-2": {
+        "props": {
+            "src": "https://i.imgur.com/HLLiO8N.jpeg"
+        }
+    }
+}

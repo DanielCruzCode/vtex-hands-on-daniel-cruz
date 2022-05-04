@@ -1,0 +1,87 @@
+{
+    "drawer#size-guide": {
+        "blocks": [
+            "drawer-trigger#size-guide",
+            "drawer-header#size-guide"
+        ],
+        "children": [
+            "flex-layout.row#size-guide-drawer-item"
+        ]
+    },
+    "drawer-trigger#size-guide": {
+        "children": [
+            "rich-text#size-guide-drawer-trigger"
+        ]
+    },
+    "rich-text#size-guide-drawer-trigger": {
+        "props": {
+            "text": "Guía de tallas"
+        }
+    },
+    "flex-layout.row#size-guide-drawer-item": {
+        "children": [
+            "flex-layout.col#size-guide-drawer-item"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true,
+            "blockClass": [
+                "size-guide-drawer-item"
+            ]
+        }
+    },
+    "flex-layout.col#size-guide-drawer-item": {
+        "children": [
+            "flex-layout.row#size-guide-drawer-item-row-category-1",
+            "flex-layout.row#size-guide-drawer-item-row-category-2"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true,
+            "blockClass": [
+                "size-guide-drawer-item"
+            ]
+        }
+    },
+    "flex-layout.row#size-guide-drawer-item-row-category-1": {
+        "children": [
+            "drawer#size-guide-category-1",
+            "flex-layout.col#size-guide-drawer-row-icon"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true,
+            "blockClass": [
+                "size-guide-drawer-item-row"
+            ]
+        }
+    },
+    "flex-layout.row#size-guide-drawer-item-row-category-2": {
+        "children": [
+            "drawer#size-guide-category-2",
+            "flex-layout.col#size-guide-drawer-row-icon"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true,
+            "blockClass": [
+                "size-guide-drawer-item-row"
+            ]
+        }
+    },
+    "flex-layout.col#size-guide-drawer-row-icon": {
+        "children": [
+            "image#size-guide-item-row-icon"
+        ],
+        "props": {
+            "verticalAlign": "middle",
+            "horizontalAlign": "right"
+        }
+    },
+    "image#size-guide-item-row-icon": {
+        "props": {
+            "src": "https://i.imgur.com/r1VYUKc.png",
+            "blockClass": "drawer-row-icon"
+        }
+    }
+}
