@@ -1,0 +1,75 @@
+{
+    // #region mobile and tablet
+    "responsive-layout.mobile#info-card": {
+        "children": ["flex-layout.row#recepie-card-mobile"]
+    },
+    "flex-layout.row#recepie-card-mobile": {
+        "children": ["flex-layout.col#recepie-card-mobile"]
+    },
+    "flex-layout.col#recepie-card-mobile": {
+        "children": [
+            "image#recepie-mobile",
+            "rich-text#recepie-title",
+            "rich-text#recepie-subtitle",
+            "flex-layout.row#recepie-properties-mobile"
+        ]
+    },
+    "image#recepie-mobile": {
+        "title": "Recepie 1",
+        "props": {
+            "alt": "Recepie 1",
+            "src": "https://i.imgur.com/g4HOOrr.jpg"
+        }
+    },
+    "rich-text#recepie-title": {
+        "title": "title",
+        "props": {
+            "text": "# Pavo dorado relleno al horno"
+        }
+    },
+    "rich-text#recepie-subtitle": {
+        "title": "subtitle",
+        "props": {
+            "text": "Delicioso y sencillo de preparar, pavo al horno relleno de verduras con jamón serrano para celebrar en navidad con toda la familia"
+        }
+    },
+    "flex-layout.row#recepie-properties-mobile": {
+        "props": {
+            "blockClass": "recepie-properties-mobile",
+            "preserveLayoutOnMobile": true
+        },
+        "children": [
+            "flex-layout.col#recepie-properties-mobile-col-1",
+            "flex-layout.col#recepie-properties-mobile-col-2"
+        ]
+    },
+    "flex-layout.col#recepie-properties-mobile-col-1": {
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "blockClass": [
+                "recepie-properties-mobile-col",
+                "recepie-properties-mobile-col-1"
+            ]
+        },
+        "children": [
+            "flex-layout.row#recepie-property-1",
+            "flex-layout.row#recepie-property-2",
+            "flex-layout.row#recepie-property-3"
+        ]
+    },
+    "flex-layout.col#recepie-properties-mobile-col-2": {
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "blockClass": [
+                "recepie-properties-mobile-col",
+                "recepie-properties-mobile-col-1"
+            ]
+        },
+        "children": [
+            "flex-layout.row#recepie-property-4",
+            "flex-layout.row#recepie-property-5",
+            "flex-layout.row#recepie-property-6"
+        ]
+    }
+    // #endregion mobile and tablet
+}

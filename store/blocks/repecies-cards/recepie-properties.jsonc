@@ -1,0 +1,133 @@
+{
+    // #region property 1
+    "flex-layout.row#recepie-property-1": {
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "blockClass": "recepie-property"
+        },
+        "children": ["image#recepie-property-1", "rich-text#recepie-property-1"]
+    },
+    "image#recepie-property-1": {
+        "title": "Property 1",
+        "props": {
+            "alt": "Property 1",
+            "src": "https://i.imgur.com/RWj3DiZ.png"
+        }
+    },
+    "rich-text#recepie-property-1": {
+        "title": "Property 1",
+        "props": {
+            "text": "60 minutos"
+        }
+    },
+    // #endregion property 1
+    // #region property 2
+    "flex-layout.row#recepie-property-2": {
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "blockClass": "recepie-property"
+        },
+        "children": ["image#recepie-property-2", "rich-text#recepie-property-2"]
+    },
+    "image#recepie-property-2": {
+        "title": "Property 2",
+        "props": {
+            "alt": "Property 2",
+            "src": "https://i.imgur.com/EvjGjXS.png"
+        }
+    },
+    "rich-text#recepie-property-2": {
+        "title": "Property 2",
+        "props": {
+            "text": "Nivel principiante"
+        }
+    },
+    // #endregion property 3
+    "flex-layout.row#recepie-property-3": {
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "blockClass": "recepie-property"
+        },
+        "children": ["image#recepie-property-3", "rich-text#recepie-property-3"]
+    },
+    "image#recepie-property-3": {
+        "title": "Property 3",
+        "props": {
+            "alt": "Property 3",
+            "src": "https://i.imgur.com/xx4LO0k.png"
+        }
+    },
+    "rich-text#recepie-property-3": {
+        "title": "Property 3",
+        "props": {
+            "text": "$/1200 - $/1480"
+        }
+    },
+    // #endregion property 3
+    // #region property 4
+    "flex-layout.row#recepie-property-4": {
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "blockClass": "recepie-property"
+        },
+        "children": ["image#recepie-property-4", "rich-text#recepie-property-4"]
+    },
+    "image#recepie-property-4": {
+        "title": "Property 4",
+        "props": {
+            "alt": "Property 4",
+            "src": "https://i.imgur.com/xx4LO0k.png"
+        }
+    },
+    "rich-text#recepie-property-4": {
+        "title": "Property 4",
+        "props": {
+            "text": "8 Ingredientes"
+        }
+    },
+    // #endregion property 4
+    // #region property 5
+    "flex-layout.row#recepie-property-5": {
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "blockClass": "recepie-property"
+        },
+        "children": ["image#recepie-property-5", "rich-text#recepie-property-5"]
+    },
+    "image#recepie-property-5": {
+        "title": "Property 5",
+        "props": {
+            "alt": "Property 5",
+            "src": "https://i.imgur.com/9V8uyXo.png"
+        }
+    },
+    "rich-text#recepie-property-5": {
+        "title": "Property 5",
+        "props": {
+            "text": "4 a 6 comensales"
+        }
+    },
+    // #endregion property 5
+    // #region property 6
+    "flex-layout.row#recepie-property-6": {
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "blockClass": "recepie-property"
+        },
+        "children": ["image#recepie-property-6", "rich-text#recepie-property-6"]
+    },
+    "image#recepie-property-6": {
+        "title": "Property 6",
+        "props": {
+            "alt": "Property 6",
+            "src": "https://i.imgur.com/IhKo5Rc.png"
+        }
+    },
+    "rich-text#recepie-property-6": {
+        "title": "Property 6",
+        "props": {
+            "text": "País: Perú"
+        }
+    }
+    // #endregion property 6
+}

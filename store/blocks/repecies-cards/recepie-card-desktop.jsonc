@@ -1,0 +1,76 @@
+{
+    // #region desktop
+    "responsive-layout.desktop#info-card": {
+        "children": ["flex-layout.row#recepie-card-desktop"]
+    },
+
+    "flex-layout.row#recepie-card-desktop": {
+        "children": ["flex-layout.col#recepie-card-desktop"]
+    },
+    "flex-layout.col#recepie-card-desktop": {
+        "children": [
+            "image#recepie-desktop",
+            "rich-text#recepie-title",
+            "rich-text#recepie-subtitle",
+            "flex-layout.row#recepie-properties-desktop"
+        ]
+    },
+    "image#recepie-desktop": {
+        "title": "Recepie 1",
+        "props": {
+            "alt": "Recepie 1",
+            "src": "https://i.imgur.com/ipQipBB.jpg"
+        }
+    },
+    "flex-layout.row#recepie-properties-desktop": {
+        "props": {
+            "blockClass": "recepie-properties-desktop",
+            "preserveLayoutOnMobile": true
+        },
+        "children": [
+            "flex-layout.col#recepie-properties-desktop-col-1",
+            "flex-layout.col#recepie-properties-desktop-col-2",
+            "flex-layout.col#recepie-properties-desktop-col-3"
+        ]
+    },
+    "flex-layout.col#recepie-properties-desktop-col-1": {
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "blockClass": [
+                "recepie-properties-desktop-col",
+                "recepie-properties-desktop-col-2"
+            ]
+        },
+        "children": [
+            "flex-layout.row#recepie-property-1",
+            "flex-layout.row#recepie-property-5"
+        ]
+    },
+    "flex-layout.col#recepie-properties-desktop-col-2": {
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "blockClass": [
+                "recepie-properties-desktop-col",
+                "recepie-properties-desktop-col-2"
+            ]
+        },
+        "children": [
+            "flex-layout.row#recepie-property-4",
+            "flex-layout.row#recepie-property-3"
+        ]
+    },
+    "flex-layout.col#recepie-properties-desktop-col-3": {
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "blockClass": [
+                "recepie-properties-desktop-col",
+                "recepie-properties-desktop-col-1"
+            ]
+        },
+        "children": [
+            "flex-layout.row#recepie-property-2",
+            "flex-layout.row#recepie-property-6"
+        ]
+    }
+    // #endregion desktop
+}
