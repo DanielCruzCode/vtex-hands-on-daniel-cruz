@@ -18,7 +18,8 @@
         "title": "Recepie 1",
         "props": {
             "alt": "Recepie 1",
-            "src": "https://i.imgur.com/g4HOOrr.jpg"
+            "src": "https://i.imgur.com/g4HOOrr.jpg",
+            "blockClass": "recepie-mobile"
         }
     },
     "rich-text#recepie-title": {

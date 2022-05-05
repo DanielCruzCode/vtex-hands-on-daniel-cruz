@@ -19,7 +19,8 @@
         "title": "Recepie 1",
         "props": {
             "alt": "Recepie 1",
-            "src": "https://i.imgur.com/ipQipBB.jpg"
+            "src": "https://i.imgur.com/ipQipBB.jpg",
+            "blockClass": "recepie-desktop"
         }
     },
     "flex-layout.row#recepie-properties-desktop": {
