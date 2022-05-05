@@ -1,0 +1,25 @@
+{
+    "flex-layout.col#category-bubble-container-3": {
+        "props": {
+            "horizontalAlign": "center",
+            "blockClass": "category-bubble-container-3"
+        },
+        "children": [
+            "image#category-bubble-3",
+            "rich-text#category-bubble-text-3"
+        ]
+    },
+    "image#category-bubble-3": {
+        "title": "Category 3",
+        "props": {
+            "alt": "Category 3",
+            "src": "https://plchldr.co/i/40x50?&bg=ff0000%20&fc=fff"
+        }
+    },
+    "rich-text#category-bubble-text-3": {
+        "title": "Category 3",
+        "props": {
+            "text": "Cuidado Facial"
+        }
+    }
+}

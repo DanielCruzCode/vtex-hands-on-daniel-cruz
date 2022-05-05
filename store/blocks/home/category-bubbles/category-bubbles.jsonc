@@ -1,0 +1,52 @@
+{
+    "flex-layout.row#category-bubbles-container": {
+        "props": {
+            "blockClass": "category-bubbles-container"
+        },
+        "children": ["flex-layout.col#category-bubbles-wrapper"]
+    },
+    "flex-layout.col#category-bubbles-wrapper": {
+        "props": {
+            "blockClass": "category-bubbles-wrapper"
+        },
+        "children": ["flex-layout.row#category-bubbles-row"]
+    },
+    "flex-layout.row#category-bubbles-row": {
+        "title": "Galería de categorías",
+        "props": {
+            "blockClass": "category-bubbles-row"
+        },
+        "children": [
+            "flex-layout.col#category-bubbles-title",
+            "flex-layout.col#category-bubble-container-1",
+            "flex-layout.col#category-bubble-container-2",
+            "flex-layout.col#category-bubble-container-3",
+            "flex-layout.col#category-bubble-container-4",
+            "flex-layout.col#category-bubble-container-5",
+            "flex-layout.col#category-bubble-container-6",
+            "flex-layout.col#category-bubble-container-7",
+            "flex-layout.col#category-bubble-container-8"
+        ]
+    },
+    "flex-layout.col#category-bubbles-title": {
+        "props": {
+            "blockClass": "category-bubbles-title"
+        },
+        "children": [
+            "rich-text#category-bubbles-title",
+            "rich-text#category-bubbles-subtitle"
+        ]
+    },
+    "rich-text#category-bubbles-title": {
+        "title": "Category bubbles title",
+        "props": {
+            "text": "¿Qué estas buscando?"
+        }
+    },
+    "rich-text#category-bubbles-subtitle": {
+        "title": "Category bubbles subtitle",
+        "props": {
+            "text": "VER TODO"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "flex-layout.col#category-bubble-container-1": {
+        "props": {
+            "horizontalAlign": "center",
+            "blockClass": "category-bubble-container-1"
+        },
+        "children": [
+            "image#category-bubble-1",
+            "rich-text#category-bubble-text-1"
+        ]
+    },
+    "image#category-bubble-1": {
+        "title": "Category 1",
+        "props": {
+            "alt": "Category 1",
+            "src": "https://plchldr.co/i/40x50?&bg=ff0000%20&fc=fff"
+        }
+    },
+    "rich-text#category-bubble-text-1": {
+        "title": "Category 1",
+        "props": {
+            "text": "Cuidado Capilar"
+        }
+    }
+}

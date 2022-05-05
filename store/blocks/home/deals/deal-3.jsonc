@@ -1,0 +1,27 @@
+{
+    "flex-layout.col#deal-col-3": {
+        "title": "Promesa 3",
+        "props": {
+            "blockClass": ["deal-container", "deal-container-3"]
+        },
+        "children": ["flex-layout.row#deal-wrapper-3"]
+    },
+    "flex-layout.row#deal-wrapper-3": {
+        "props": {
+            "blockClass": "deal-wrapper"
+        },
+        "children": ["image#deal-3", "rich-text#deal-3"]
+    },
+    "image#deal-3": {
+        "title": "Categoría 3",
+        "props": {
+            "alt": "Categoría 3",
+            "src": "https://plchldr.co/i/93x93?&bg=000&fc=fff"
+        }
+    },
+    "rich-text#deal-3": {
+        "props": {
+            "text": "Mejores precios y **ofertas**"
+        }
+    }
+}

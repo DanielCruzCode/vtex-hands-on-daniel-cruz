@@ -1,0 +1,25 @@
+{
+    "flex-layout.col#category-bubble-container-5": {
+        "props": {
+            "horizontalAlign": "center",
+            "blockClass": "category-bubble-container-5"
+        },
+        "children": [
+            "image#category-bubble-5",
+            "rich-text#category-bubble-text-5"
+        ]
+    },
+    "image#category-bubble-5": {
+        "title": "Category 5",
+        "props": {
+            "alt": "Category 5",
+            "src": "https://plchldr.co/i/40x50?&bg=ff0000%20&fc=fff"
+        }
+    },
+    "rich-text#category-bubble-text-5": {
+        "title": "Category 5",
+        "props": {
+            "text": "Cuidado bebé"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "flex-layout.row#deals-container": {
+        "props": {
+            "blockClass": "deals-container"
+        },
+        "children": ["flex-layout.col#deals-wrapper"]
+    },
+    "flex-layout.col#deals-wrapper": {
+        "children": ["flex-layout.row#deals-row"],
+        "props": {
+            "blockClass": ["deals-wrapper"],
+            "horizontalAlign": "center"
+        }
+    },
+    "flex-layout.row#deals-row": {
+        "children": [
+            "flex-layout.col#deal-col-1",
+            "flex-layout.col#deal-col-2",
+            "flex-layout.col#deal-col-3",
+            "flex-layout.col#deal-col-4",
+            "flex-layout.col#deal-col-5"
+        ],
+        "props": {
+            "blockClass": ["deals-row"]
+        }
+    }
+}

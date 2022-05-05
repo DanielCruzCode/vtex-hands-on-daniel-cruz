@@ -1,0 +1,27 @@
+{
+    "flex-layout.col#deal-col-2": {
+        "title": "Promesa 2",
+        "props": {
+            "blockClass": ["deal-container", "deal-container-2"]
+        },
+        "children": ["flex-layout.row#deal-wrapper-2"]
+    },
+    "flex-layout.row#deal-wrapper-2": {
+        "props": {
+            "blockClass": "deal-wrapper"
+        },
+        "children": ["image#deal-2", "rich-text#deal-2"]
+    },
+    "image#deal-2": {
+        "title": "Categoría 2",
+        "props": {
+            "alt": "Categoría 2",
+            "src": "https://plchldr.co/i/93x93?&bg=000&fc=fff"
+        }
+    },
+    "rich-text#deal-2": {
+        "props": {
+            "text": "Compra **fácil y segura**"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "flex-layout.col#deal-col-5": {
+        "title": "Promesa 5",
+        "props": {
+            "blockClass": ["deal-container", "deal-container-5"]
+        },
+        "children": ["flex-layout.row#deal-wrapper-5"]
+    },
+    "flex-layout.row#deal-wrapper-5": {
+        "props": {
+            "blockClass": "deal-wrapper"
+        },
+        "children": ["image#deal-5", "rich-text#deal-5"]
+    },
+    "image#deal-5": {
+        "title": "Categoría 5",
+        "props": {
+            "alt": "Categoría 5",
+            "src": "https://plchldr.co/i/93x93?&bg=000&fc=fff"
+        }
+    },
+    "rich-text#deal-5": {
+        "props": {
+            "text": "Pago **online y contra entrega**"
+        }
+    }
+}

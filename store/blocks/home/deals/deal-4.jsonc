@@ -1,0 +1,27 @@
+{
+    "flex-layout.col#deal-col-4": {
+        "title": "Promesa 4",
+        "props": {
+            "blockClass": ["deal-container", "deal-container-4"]
+        },
+        "children": ["flex-layout.row#deal-wrapper-4"]
+    },
+    "flex-layout.row#deal-wrapper-4": {
+        "props": {
+            "blockClass": "deal-wrapper"
+        },
+        "children": ["image#deal-4", "rich-text#deal-4"]
+    },
+    "image#deal-4": {
+        "title": "Categoría 4",
+        "props": {
+            "alt": "Categoría 4",
+            "src": "https://plchldr.co/i/93x93?&bg=000&fc=fff"
+        }
+    },
+    "rich-text#deal-4": {
+        "props": {
+            "text": "**Seguimiento** de tus pedidos"
+        }
+    }
+}
