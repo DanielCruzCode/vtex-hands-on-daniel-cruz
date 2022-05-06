@@ -26,7 +26,7 @@
                 "desktop": "disabled"
             },
             "showPaginationDots": "never",
-            "showNavigationArrows": "never",
+            "showNavigationArrows": "mobileOnly",
             "blockClass": "deals"
         },
         "children": [
