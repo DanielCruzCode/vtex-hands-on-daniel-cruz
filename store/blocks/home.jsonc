@@ -1,257 +1,74 @@
 {
     "store.home": {
-        "blocks": [
-            "list-context.image-list#home-videos"
-            // "slider-layout#home-slider"
-            // "flex-layout.row#deals"
-            // "flex-layout.row#categories"
-        ]
+        "blocks": ["list-context.image-list#home-videos"]
     },
 
     "list-context.image-list#home-videos": {
         "children": ["slider-layout#home-videos"],
         "props": {
-          "preload": true,
-          "height": 650,
-          "images": [
-            {
-              "image": "https://i.imgur.com/oY7YEDM.jpeg",
-              "description": "image-1"
-            },
-            {
-              "image": "https://i.imgur.com/oY7YEDM.jpeg",
-              "description": "image-2"
-            },
-            {
-              "image": "https://i.imgur.com/oY7YEDM.jpeg",
-              "description": "image-3"
-            }
-          ]
+            "preload": true,
+            "height": 650,
+            "images": [
+                {
+                    "image": "https://i.imgur.com/oY7YEDM.jpeg",
+                    "description": "image-1",
+                    "link": {
+                        "url": "/categoria-1"
+                    }
+                },
+                {
+                    "image": "https://i.imgur.com/oY7YEDM.jpeg",
+                    "description": "image-2",
+                    "link": {
+                        "url": "/categoria-2"
+                    }
+                },
+                {
+                    "image": "https://i.imgur.com/oY7YEDM.jpeg",
+                    "description": "image-3",
+                    "link": {
+                        "url": "/categoria-3"
+                    }
+                }
+                // {
+                //     "Video": "video#1",
+                //     "Link": "link#video-1"
+                // }
+            ]
         }
     },
 
-    "slider-layout#wrapper": {
-        "props": {
-            "itemsPerPage": {
-              "desktop": 1,
-              "tablet": 1,
-              "phone": 1
-            },
-            "infinite": true
-        },
-        "children": ["slider-layout#home-videos"]
-    },
-    
     "slider-layout#home-videos": {
+        "children": ["link#video-1"],
         "props": {
             "itemsPerPage": {
-              "desktop": 1,
-              "tablet": 1,
-              "phone": 1
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
             },
-            "infinite": true
-        },
-        "children": ["link#video-1"]
+            "infinite": true,
+            "autoplay": {
+                "timeout": 3500
+            }
+        }
     },
 
     "link#video-1": {
-        "children": [
-            "video#1"
-        ],
+        "children": ["video#1"],
         "props": {
-          "href": "/video-prueba",
-          "label": "Video link"
+            "href": "/video-prueba",
+            "label": "Video link"
         }
     },
 
     "video#1": {
         "props": {
-          "width": "100%",
-          "height": "600px",
-          "loop": false,
-          "autoPlay": true,
-          "muted": false,
-          "src": "https://www.youtube.com/watch?v=ZmDBbnmKpqQ"
-        }
-    },
-
-    "slider-layout#home-slider": {
-        "props": {
-            "infinite": true,
-            "showNavigationArrows": "desktopOnly"
-          },
-          "children": ["image#1", "image#2", "image#3"]
-    },
-
-    "image#1":{
-        "title": "image-1",
-        "props": {
-            "link": {
-                "url": "/categoria-1"
-            },
-            "blokClass": "banner",
-            "src": "https://i.imgur.com/oY7YEDM.jpeg"
-        }
-    },
-    "image#2":{
-        "title": "image-2",
-        "props": {
-            "link": {
-                "url": "/categoria-1"
-            },
-            "blokClass": "banner",
-            "src": "https://i.imgur.com/oY7YEDM.jpeg"
-        }
-    },
-    "image#3":{
-        "title": "image-3",
-        "props": {
-            "link": {
-                "url": "/categoria-1"
-            },
-            "blokClass": "banner",
-            "src": "https://i.imgur.com/oY7YEDM.jpeg"
-        }
-    },
-
-
-
-
-
-    "flex-layout.row#deals": {
-        "props": {
-            "blokClass": "deals"
-        },
-        "children": [
-            "slider-layout#deals-images"
-        ]
-    },
-
-    "slider-layout#deals-images": {
-        "props": {
-            "itemsPerPage": {
-              "desktop": 5,
-              "tablet": 3,
-              "phone": 1
-            },
-            "infinite": true
-        }
-          
-    },
-    
-    "flex-layout.row#categories": {
-        "props": {
-            "blokClass": "categories"
-        },
-        "children": [
-            "flex-layout.col#categories-text",
-            "flex-layout.col#categories-bubbles-container"
-        ]
-    },
-    // #region Category Text
-    "flex-layout.col#categories-text": {
-        "props": {
-            "blokClass": "categories-text"
-        },
-        "children": [
-            "rich-text#categories-title",
-            "rich-text#categories-see-all-link"
-        ]
-    },
-    "rich-text#categories-title": {
-        "props": {
-            "blokClass": "categories-title",
-            "text": "¿QUÉ ESTAS BUSCANDO?"
-        }
-    },
-    "rich-text#categories-see-all-link": {
-        "props": {
-            "blokClass": "categories-see-all-link",
-            "text": "VER TODO"
-        }
-    },
-    // #endregion Category Text
-    // #region Category Bubbles
-    "flex-layout.col#categories-bubbles-container": {
-        "props": {
-            "blokClass": "categories-bubbles-container"
-        },
-        "children": [
-            "flex-layout.row#categories-bubbles-wrapper"
-        ]
-    },
-
-    "flex-layout.row#categories-bubbles-wrapper": {
-        "props": {
-            "blokClass": "categories-bubbles-wrapper"
-        },
-        "children": [
-            "image#category-1",
-            "image#category-2",
-            "image#category-3",
-            "image#category-4",
-            "image#category-5",
-            "image#category-6",
-            "image#category-7",
-            "image#category-8"
-        ]
-    },
-    "image#category-1": {
-        "props": {
-            "blokClass": ["category-bubble", "categories-bubble-1"],
-            "src": "https://plchldr.co/i/93x93?&bg=000&fc=fff",
-            "alt": "Image of category"
-        }
-    },
-    "image#category-2": {
-        "props": {
-            "blokClass": ["category-bubble", "categories-bubble-2"],
-            "src": "https://plchldr.co/i/93x93?&bg=000&fc=fff",
-            "alt": "Image of category"
-        }
-    },
-    "image#category-3": {
-        "props": {
-            "blokClass": ["category-bubble", "categories-bubble-3"],
-            "src": "https://plchldr.co/i/93x93?&bg=000&fc=fff",
-            "alt": "Image of category"
-        }
-    },
-    "image#category-4": {
-        "props": {
-            "blokClass": ["category-bubble", "categories-bubble-4"],
-            "src": "https://plchldr.co/i/93x93?&bg=000&fc=fff",
-            "alt": "Image of category"
-        }
-    },
-    "image#category-5": {
-        "props": {
-            "blokClass": ["category-bubble", "categories-bubble-5"],
-            "src": "https://plchldr.co/i/93x93?&bg=000&fc=fff",
-            "alt": "Image of category"
-        }
-    },
-    "image#category-6": {
-        "props": {
-            "blokClass": ["category-bubble", "categories-bubble-6"],
-            "src": "https://plchldr.co/i/93x93?&bg=000&fc=fff",
-            "alt": "Image of category"
-        }
-    },
-    "image#category-7": {
-        "props": {
-            "blokClass": ["category-bubble", "categories-bubble-7"],
-            "src": "https://plchldr.co/i/93x93?&bg=000&fc=fff",
-            "alt": "Image of category"
-        }
-    },
-    "image#category-8": {
-        "props": {
-            "blokClass": ["category-bubble", "categories-bubble-8"],
-            "src": "https://plchldr.co/i/93x93?&bg=000&fc=fff",
-            "alt": "Image of category"
+            "width": "100%",
+            "height": "600px",
+            "loop": false,
+            "autoPlay": true,
+            "muted": false,
+            "src": "https://www.youtube.com/watch?v=ZmDBbnmKpqQ"
         }
     }
-
-    // #endregion Category Bubbles
 }
