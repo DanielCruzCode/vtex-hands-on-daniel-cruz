@@ -2,6 +2,7 @@
     "flex-layout.col#deal-col-5": {
         "title": "Promesa 5",
         "props": {
+            "horizontalAlign": "center",
             "blockClass": ["deal-container", "deal-container-5"]
         },
         "children": ["flex-layout.row#deal-wrapper-5"]
@@ -16,7 +17,8 @@
         "title": "Categoría 5",
         "props": {
             "alt": "Categoría 5",
-            "src": "https://plchldr.co/i/93x93?&bg=000&fc=fff"
+            "src": "https://plchldr.co/i/93x93?&bg=000&fc=fff",
+            "blockClass": "deal"
         }
     },
     "rich-text#deal-5": {

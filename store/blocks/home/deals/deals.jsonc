@@ -1,6 +1,7 @@
 {
     "flex-layout.row#deals-container": {
         "props": {
+            "marginTop": "10",
             "blockClass": "deals-container"
         },
         "children": ["flex-layout.col#deals-wrapper"]
@@ -13,15 +14,27 @@
         }
     },
     "flex-layout.row#deals-row": {
+        "children": ["slider-layout#deals-slider"],
+        "props": {
+            "blockClass": ["deals-row"]
+        }
+    },
+    "slider-layout#deals-slider": {
+        "props": {
+            "centerMode": {
+                "mobile": "to-the-left",
+                "desktop": "disabled"
+            },
+            "showPaginationDots": "never",
+            "showNavigationArrows": "never",
+            "blockClass": "deals"
+        },
         "children": [
             "flex-layout.col#deal-col-1",
             "flex-layout.col#deal-col-2",
             "flex-layout.col#deal-col-3",
             "flex-layout.col#deal-col-4",
             "flex-layout.col#deal-col-5"
-        ],
-        "props": {
-            "blockClass": ["deals-row"]
-        }
+        ]
     }
 }
