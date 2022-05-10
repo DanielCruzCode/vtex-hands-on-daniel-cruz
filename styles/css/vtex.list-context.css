@@ -1,0 +1,68 @@
+/* #region Concepts */
+/* 
+    # Info
+    Este template es para que puedas estructurar tu código con la mentalidad/paradigma de Mobile first,
+    donde empiezas con los estilos y estructuras desde mobile, luego a base de media queries (que están abajo)
+    se dá el diseño para tablet, desktop y TVs. 
+
+    # Objetivo
+    La gracia de usar esta plantilla para sobreescribir estilos a base de especificación de cascada, por lo que si
+    escribes muchas media queries o muchos !important esta metodología no funcionará
+    
+    # Recomendaciones
+    * Trata de usar las media queries que ya están, si necesitas una créala pero que tenga sentido el crearla
+    * Si quieres sobre escribir algo a fuerza como última opción escríbelo en los Hard Overrides y SOLO si es
+    necesario usa el !important
+*/
+/* #endregion */
+
+/* #region Overrides && Mobile */
+.list--product-redered {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+}
+
+.item--product-redered .imageElement--product-redered {
+    min-height: 400px;
+    object-fit: cover;
+}
+
+/* #endregion */
+/* #region  Media Queries */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .list--product-redered {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .item--product-redered {
+        width: 100%;
+    }
+
+    .item--product-redered:nth-child(4n) {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+/* Extra large devices (large desktops and TVs, 1900px and up) */
+@media only screen and (min-width: 1900px) {
+}
+/* #endregion */
+
+/* #region  Hard Overrides */
+
+/* #endregion */
