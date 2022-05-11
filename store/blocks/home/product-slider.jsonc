@@ -1,0 +1,23 @@
+{
+    "list-context.product-list#product-slider": {
+        "blocks": ["product-summary.shelf#product-slider"],
+        "children": ["slider-layout#product-slider"]
+    },
+    "slider-layout#product-slider": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 3,
+                "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "blockClass": "product-slider",
+            "centerMode": {
+                "phone": "to-the-left",
+                "tablet": "disabled",
+                "desktop": "disabled"
+            }
+        }
+    }
+}

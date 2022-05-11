@@ -1,16 +1,17 @@
-# Vtex hands on
+# Product list
 
-Este este es un proyecto con cada uno de los retos del curso para generar componentes básico a complejos.
+## list context product list
 
-## Retos
+Este es el resultado del ejercicio. 👨‍💻
 
-Los retos estan divididos por ramas con nomenclatura **feature/componente-del-reto**
+## Mobile
 
-1. [x] [Rich text](https://github.com/DanielCruzCode/vtex-hands-on-daniel-cruz/tree/feature/rich-text)
-2. [x] [Flex layout](https://github.com/DanielCruzCode/vtex-hands-on-daniel-cruz/tree/feature/flex-layout)
-3. [x] [Responsive layout](https://github.com/DanielCruzCode/vtex-hands-on-daniel-cruz/tree/feature/responsive-layout)
-4. [x] [Slider layout](https://github.com/DanielCruzCode/vtex-hands-on-daniel-cruz/tree/feature/slider-layout)
-5. [x] [Image list](https://github.com/DanielCruzCode/vtex-hands-on-daniel-cruz/tree/feature/image-list)
-6. [ ] [Product list](https://github.com/DanielCruzCode/vtex-hands-on-daniel-cruz/tree/feature/image-list)
-7. [x] [List context rendered](https://github.com/DanielCruzCode/vtex-hands-on-daniel-cruz/tree/feature/list-context-rendered)
-8. [x] [Drawer](https://github.com/DanielCruzCode/vtex-hands-on-daniel-cruz/tree/feature/drawer)
+![image](https://user-images.githubusercontent.com/50213595/167892558-46c6faa4-80e9-4d78-804c-9164f126b54a.png)
+
+## Tablet
+
+![image](https://user-images.githubusercontent.com/50213595/167892728-e7d75a59-ab8d-4978-9231-20466e1f3323.png)
+
+## Desktop 1440
+
+![image](https://user-images.githubusercontent.com/50213595/167892395-813150e7-c3cc-414a-a827-3899f46e538c.png)
