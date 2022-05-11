@@ -6,9 +6,10 @@
     "slider-layout#product-slider": {
         "props": {
             "itemsPerPage": {
-                "desktop": 5,
+                "phone": 1,
                 "tablet": 3,
-                "phone": 1
+                "desktop": 5,
+                "(min-width: 1400px)": 6
             },
             "infinite": true,
             "showNavigationArrows": "desktopOnly",
